@@ -1,4 +1,4 @@
-from fraction_Loyd import Fraction
+from fraction import Fraction
 
 
 fraction1 = Fraction(1, 4)

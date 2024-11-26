@@ -1,5 +1,5 @@
 import unittest
-from fraction_Loyd import Fraction
+from fraction import Fraction
 
 
 class TestFraction(unittest.TestCase):
