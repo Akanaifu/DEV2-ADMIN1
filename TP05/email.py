@@ -13,7 +13,7 @@ class Email:
         self.destination = destination
         self.fichiers_joints = []
 
-    def ajouter_fichier_joint(self, fichier):
+    def ajouter_fichier_joint(self, fichier: FichierJoint):
         self.fichiers_joints.append(fichier)
 
 

@@ -6,7 +6,7 @@ class Tete:
         print(f"Description de la tête : {self.description}")
 
 
-class Corp:
+class Corps:
     def __init__(self):
         self.description = "Corps d'animal"
 
@@ -35,7 +35,7 @@ class Animal:
         self.regime = regime  # Herbivore ou Carnivore
         self.habitat = habitat  # L'habitat de l'animal
         self.tete = Tete()
-        self.corp = Corp()
+        self.corp = Corps()
         self.membres: list[Membre] = []
 
     def ajouter_membre(self, membre):
