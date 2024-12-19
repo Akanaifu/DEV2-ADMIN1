@@ -1,11 +1,11 @@
 """
 Class classe:
 
-Les classes Élève et Professeur héritent de la classe mère Personne, qui centralise les informations communes.
+Les classes eleve et Professeur heritent de la classe mere Personne, qui centralise les informations communes.
 
-Chaque Classe possède un professeur et entre 1 et 30 élèves. Ces éléments sont gérés directement dans la classe Classe.
+Chaque Classe possede un professeur et entre 1 et 30 eleves. Ces elements sont geres directement dans la classe Classe.
 
-Les Coordonnees (adresse et téléphone) sont uniques à chaque personne et ne peuvent pas exister indépendamment d’elle. Cette relation est une composition entre Personne et Coordonnees.
+Les Coordonnees (adresse et telephone) sont uniques à chaque personne et ne peuvent pas exister independamment d’elle. Cette relation est une composition entre Personne et Coordonnees.
 """
 
 
@@ -15,7 +15,7 @@ class Coordonnees:
         self.telephone = telephone
 
     def __str__(self):
-        return f"Adresse: {self.adresse}, Téléphone: {self.telephone}"
+        return f"Adresse: {self.adresse}, Telephone: {self.telephone}"
 
 
 class Personne:
@@ -24,7 +24,7 @@ class Personne:
         self.coordonnees = coordonnees
 
     def __str__(self):
-        return f"{self.__class__}: Etat civil: {self.etat_civil}, Coordonnées: {self.coordonnees}"
+        return f"{self.__class__}: Etat civil: {self.etat_civil}, Coordonnees: {self.coordonnees}"
 
 
 class Eleve(Personne):
@@ -46,31 +46,31 @@ class Classe:
         if len(self.eleves) < 30:
             self.eleves.append(eleve)
         else:
-            print("La classe est complète (30 élèves maximum).")
+            print("La classe est complete (30 eleves maximum).")
 
     def afficher_classe(self):
         print(f"Professeur: {self.professeur}")
-        print("Élèves:")
+        print("eleves:")
         for eleve in self.eleves:
             print(eleve)
 
 
 # Exemple d'utilisation
 if __name__ == "__main__":
-    # Création des coordonnées
+    # Creation des coordonnees
     coord_prof = Coordonnees("Rue des Professeurs, 123", "0123456789")
-    coord_eleve1 = Coordonnees("Avenue des Élèves, 456", "0987654321")
-    coord_eleve2 = Coordonnees("Boulevard des Étudiants, 789", "0678943210")
+    coord_eleve1 = Coordonnees("Avenue des eleves, 456", "0987654321")
+    coord_eleve2 = Coordonnees("Boulevard des etudiants, 789", "0678943210")
 
-    # Création des personnes
+    # Creation des personnes
     professeur = Professeur("Ms. Alice", coord_prof)
     eleve1 = Eleve("Bob Martin", coord_eleve1)
     eleve2 = Eleve("Tata Durand", coord_eleve2)
 
-    # Création d'une classe
+    # Creation d'une classe
     ma_classe = Classe(professeur)
 
-    # Ajout d'élèves
+    # Ajout d'eleves
     ma_classe.ajouter_eleve(eleve1)
     ma_classe.ajouter_eleve(eleve2)
 

@@ -32,7 +32,7 @@ if __name__ == "__main__":
     )
     email.ajouter_fichier_joint(FichierJoint("document.pdf", 1024, "dev2/tp5"))
 
-    print(f"De: {email.expediteur}, À: {email.destination}")
+    print(f"De: {email.expediteur}, A: {email.destination}")
     print(f"Titre: {email.objet}, Texte: {email.texte}")
     print("Fichiers joints:")
     for f in email.fichiers_joints:
