@@ -1,3 +1,12 @@
+"""
+Chaque animal possède exactement 1 tête et 1 corps (composition). Il peut avoir plusieurs membres. Les membres appartiennent à un seul animal. Habitat :
+
+Chaque animal peut avoir 1 habitat. Un habitat peut être partagé par 0 à n animaux (agrégation). Héritage :
+
+Les espèces (comme Lapin, Mouton) sont des sous-classes de la classe mère Animal.
+"""
+
+
 class Tete:
     def __init__(self):
         self.description = "Tête d'animal"

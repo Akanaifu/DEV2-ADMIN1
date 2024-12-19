@@ -1,3 +1,12 @@
+"""
+La classe Email représente un message composé d’un titre et d’un texte, tous deux optionnels. Elle contient également les informations obligatoires de l'expéditeur et du destinataire.
+
+Un Email peut comporter une liste de fichiers joints. Chaque fichier joint est représenté par la classe FichierJoint, qui contient un nom, une taille et un chemin d’accès.
+
+La relation entre Email et FichierJoint est une composition : un email peut posséder de zéro à plusieurs fichiers joints, qui dépendent directement de l'email.
+"""
+
+
 class FichierJoint:
     def __init__(self, nom, taille, chemin):
         self.nom = nom

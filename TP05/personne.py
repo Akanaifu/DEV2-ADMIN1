@@ -1,3 +1,14 @@
+"""
+Class classe:
+
+Les classes Élève et Professeur héritent de la classe mère Personne, qui centralise les informations communes.
+
+Chaque Classe possède un professeur et entre 1 et 30 élèves. Ces éléments sont gérés directement dans la classe Classe.
+
+Les Coordonnees (adresse et téléphone) sont uniques à chaque personne et ne peuvent pas exister indépendamment d’elle. Cette relation est une composition entre Personne et Coordonnees.
+"""
+
+
 class Coordonnees:
     def __init__(self, adresse: str, telephone: str):
         self.adresse = adresse
