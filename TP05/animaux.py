@@ -1,9 +1,9 @@
 """
-Chaque animal possede exactement 1 tete et 1 corps (composition). Il peut avoir plusieurs membres. Les membres appartiennent à un seul animal. Habitat :
+Chaque animal possede exactement 1 tete et 1 corps (composition). Il peut avoir plusieurs membres. Les membres appartiennent à un seul animal.
 
-Chaque animal peut avoir 1 habitat. Un habitat peut être partagé par 0 à n animaux (agrégation). Héritage :
+Habitat: Chaque animal habite exactement dans 1 habitat (agrégation). Un habitat peut être partagé par au moins 1 animal.
 
-Les especes (comme Lapin, Mouton) sont des sous-classes de la classe mere Animal.
+Héritage: Les especes (comme Lapin, Mouton) sont des sous-classes de la classe mere Animal.
 """
 
 
